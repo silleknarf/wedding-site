@@ -1,0 +1,58 @@
+html,h1,p, body {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    width: 100vw;
+}
+
+.heading {
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: x-large;
+    grid-column: 2;
+    grid-row: 1;
+ }
+
+.subtitle {
+    grid-column: 2;
+    grid-row: 2;
+ }
+
+ .nav {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+ }
+
+.img-banner {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+ }
+
+.img-banner > img {
+    object-fit: contain;
+    width: 100vw;
+ }
+
+ #schedule {
+    grid-column: 2;
+    grid-row: 5;
+ }
+
+ #how-to-get-there {
+    grid-column: 2;
+    grid-row: 6;
+ }
+
+ #gift-list {
+    grid-column: 2;
+    grid-row: 7;
+ }
