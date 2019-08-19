@@ -42,17 +42,49 @@ html,h1,p, body {
     width: 100vw;
  }
 
+ .subsection-heading {
+    font-size: xx-large;
+ }
+
  #schedule {
     grid-column: 2;
     grid-row: 5;
+    text-align: center;
+ }
+
+ #schedule-body {
+    display: inline-block;
+    text-align: left;
  }
 
  #how-to-get-there {
     grid-column: 2;
     grid-row: 6;
+    text-align: center;
  }
 
  #gift-list {
     grid-column: 2;
     grid-row: 7;
+    text-align: center;
+ }
+
+ .row {
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+     width: 20vw;
+ }
+
+ .row .cell-time {
+    grid-column: 1;
+    text-align: right;
+ }
+
+ .row .dash {
+    grid-column: 2;
+    text-align: center;
+ }
+
+ .row .cell-description {
+    grid-column: 3;
  }
