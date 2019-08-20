@@ -8,6 +8,7 @@ html,h1,p, body {
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     width: 100vw;
+    min-width: 100vw;
 }
 
 .heading {
@@ -87,4 +88,8 @@ html,h1,p, body {
 
  .row .cell-description {
     grid-column: 3;
+ }
+
+ #img-wedding-shop {
+     width: 30vh;
  }
