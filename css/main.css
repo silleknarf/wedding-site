@@ -1,6 +1,7 @@
 html,h1,p, body {
     margin: 0;
-    font-family: 'Amatic SC', cursive;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    text-transform: uppercase;
 }
 
 .container {
@@ -16,9 +17,28 @@ html,h1,p, body {
 }
 
 .title {
-    font-size: x-large;
+    font-size: 4vw;
     grid-column: 2;
     grid-row: 1;
+    font-family: 'Italianno', cursive;
+    text-transform: none;
+
+    /* Gold Foil Effect */
+    color:    #D5AD6D; /*if no support for background-clip*/
+    background: 
+        -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(
+            top, 
+            rgba(213,173,109,1) 0%, 
+            rgba(213,173,109,1) 26%, 
+            rgba(226,186,120,1) 35%, 
+            rgba(163,126,67,1) 45%, 
+            rgba(145,112,59,1) 61%, 
+            rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
  }
 
 .subtitle {
@@ -41,10 +61,15 @@ html,h1,p, body {
 .img-banner > img {
     object-fit: contain;
     width: 100vw;
+    margin-bottom: -4px;
 }
 
 .subsection-heading {
     font-size: xx-large;
+}
+
+.subsection-body {
+    padding: 20px;
 }
 
 #content {
@@ -53,13 +78,21 @@ html,h1,p, body {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: 50% 50%;
+    grid-row-gap: 30px;
+
+    background-color: blanchedalmond;
+    background: linear-gradient(#c8d0d3, #d3d4cc, blanchedalmond, #cfbcab);
 }
+
+/* Futura */
+
+/* Sackers Italian */
 
 #schedule {
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-    background-color: blanchedalmond;
+
 }
 
 #schedule-body {
@@ -83,7 +116,6 @@ html,h1,p, body {
     grid-column: 2;
     grid-row: 2;
     text-align: center;
-    background-color: blanchedalmond;
 }
 
 .row {
