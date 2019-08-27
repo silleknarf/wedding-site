@@ -1,7 +1,6 @@
 html,h1,p, body {
     margin: 0;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    text-transform: uppercase;
 }
 
 .container {
@@ -14,6 +13,7 @@ html,h1,p, body {
 
 .heading {
     padding: 10px 20px;
+    text-transform: uppercase;
 }
 
 .title {
@@ -66,6 +66,7 @@ html,h1,p, body {
 
 .subsection-heading {
     font-size: xx-large;
+    text-transform: uppercase;
 }
 
 .subsection-body {
