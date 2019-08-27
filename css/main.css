@@ -35,61 +35,77 @@ html,h1,p, body {
 
 .img-banner {
     grid-column: 1 / span 3;
-    grid-row: 4;
- }
+    grid-row: 3;
+}
 
 .img-banner > img {
     object-fit: contain;
     width: 100vw;
- }
+}
 
- .subsection-heading {
+.subsection-heading {
     font-size: xx-large;
- }
+}
 
- #schedule {
-    grid-column: 2;
-    grid-row: 5;
+#content {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+}
+
+#schedule {
+    grid-column: 1;
+    grid-row: 1;
     text-align: center;
- }
+    background-color: blanchedalmond;
+}
 
- #schedule-body {
+#schedule-body {
     display: inline-block;
     text-align: left;
- }
+}
 
- #how-to-get-there {
+#how-to-get-there {
     grid-column: 2;
-    grid-row: 6;
+    grid-row: 1;
     text-align: center;
- }
+}
 
- #gift-list {
+#gift-list {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+#what-to-do-in-edinburgh {
     grid-column: 2;
-    grid-row: 7;
+    grid-row: 2;
     text-align: center;
- }
+    background-color: blanchedalmond;
+}
 
- .row {
+.row {
      display: grid;
      grid-template-columns: 33% 33% 33%;
      width: 20vw;
- }
+}
 
- .row .cell-time {
+.row .cell-time {
     grid-column: 1;
     text-align: right;
- }
+}
 
- .row .dash {
+.row .dash {
     grid-column: 2;
     text-align: center;
- }
+}
 
- .row .cell-description {
+.row .cell-description {
     grid-column: 3;
- }
+}
 
- #img-wedding-shop {
+#img-wedding-shop {
      width: 30vh;
- }
+}
