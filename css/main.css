@@ -75,10 +75,12 @@ html,h1,p, body {
 
 #content {
     grid-row: 4;
-    grid-column: 1 / span 3;
+    grid-column: 2;
 
+    /*
     background-color: blanchedalmond;
     background: linear-gradient(#c8d0d3, #d3d4cc, blanchedalmond, #cfbcab);
+    */
 }
 
 /* Futura */
@@ -133,7 +135,6 @@ html,h1,p, body {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
  }
   
 /* Style the buttons that are used to open the tab content */
@@ -164,6 +165,4 @@ html,h1,p, body {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
 }
