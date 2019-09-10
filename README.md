@@ -9,5 +9,14 @@ TODO
 + Add new what to do in Ed material
 + Layout how to get there section
 - Add countdown timer
-- Add wedding colour
-- Add much more icons
+- Tab titles
+    - Justify 
+    - Add line drawing icons
+- How to get there
+    - Add transport line drawings 
+    - Use shortened by plane text
+- Schedule 
+    - Improve formatting
+- What to do in Edinburgh
+    - Wrap onto new rows on small screen
+    - Add line drawings

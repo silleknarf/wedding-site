@@ -112,6 +112,7 @@ html,h1,p, body {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
+    grid-column-gap: 20px;
 }
 
 .train {
@@ -128,6 +129,8 @@ html,h1,p, body {
 
 #transport-options .description {
     grid-row: 2;
+    font-size: small;
+    text-align: justify;
 }
 
 #gift-list {
