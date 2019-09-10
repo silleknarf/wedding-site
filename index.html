@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="title heading">
+      <div id="title" class="heading">
         Frank and Laura's Wedding
       </div>
-      <div class="subtitle heading">
+      <div id="subtitle" class="heading">
         Assembly Rooms, Edinburgh, 14th December 2019
       </div>
       <div class="img-banner">
@@ -62,22 +62,24 @@
         </div>
         <div id="how-to-get-there" class="tabcontent">
           <div class="subsection-body">
+            <div id="transport-options">
+              <div class="train title">By Train</div>
+              <div class="train description">Only five minutes from Edinburgh’s main station, Edinburgh Waverley</div>
+              <div class="plane title">By Plane</div>
+              <div class="plane description">The nearest international airport is Edinburgh Airport, located just 7 miles away.
+                  
+                  To and from the airport
+                  Simply jump on the express Airlink bus (no. 100), which will take you from right outside the airport terminal building to Princes Street and Waverley Train station; both of which are just a short walk from us.
+                  
+                  The city’s tram system is another great way to hop between the airport and city centre. Trams operate between Edinburgh Airport and Edinburgh city centre every 8-10mins.
+              </div>
+            </div>
             <iframe 
               frameborder="0" 
               style="border:0"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7ebzKJHHh0gR6ouNAWYbr_Y&key=AIzaSyCjuEsBjiweyWW3jmAirjnsrGXhz09Y3a8&zoom=14" 
               allowfullscreen>
             </iframe>
-          </div>
-          <div>By Train</div>
-          <div>Only five minutes from Edinburgh’s main station, Edinburgh Waverley</div>
-          <div>By Plane</div>
-          <div>The nearest international airport is Edinburgh Airport, located just 7 miles away.
-              
-              To and from the airport
-              Simply jump on the express Airlink bus (no. 100), which will take you from right outside the airport terminal building to Princes Street and Waverley Train station; both of which are just a short walk from us.
-              
-              The city’s tram system is another great way to hop between the airport and city centre. Trams operate between Edinburgh Airport and Edinburgh city centre every 8-10mins.
           </div>
         </div>
         <div id="gift-list" class="tabcontent">
@@ -91,14 +93,20 @@
         </div>
         <div id="what-to-do-in-edinburgh" class="tabcontent">
           <div class="subsection-body">
-            If it's your first time in the 'burgh, here are some suggested activities:
+            <div style="padding-bottom: 20px">If it's your first time in the 'burgh and you're planning on spending time there on either side of the wedding, we'd recommend checking out:</div>
             <div id="what-to-do-in-edinburgh-suggestions">
-              <div>Christmas Market</div>
-              <div>Camera Obscura</div>
-              <div>Have A Pint At Grassmarket</div>
-              <div>Edinburgh Castle</div>
-              <div>Whiskey Experience</div>
-              <div>Ghost Tour In The Vaults</div>
+              <div class="christmas-market title">Christmas Market</div>
+              <div class="christmas-market description">The Christmas Markets will be in full swing and are defintely worth a visit for hot chocolates, mulled wine and traditional Christmas-y fare. There's usually a few traditional fair rides to enjoy as well along with an outdoor ice rink usally nearby.</div>
+              <div class="camera-obscura title">Camera Obscura</div>
+              <div class="camera-obscura description">Just down the road from Edinburgh castle (on the Royal Mile) is this gem of an attraction with heaps of interactive illusion exhibits. We recommend the mirror maze and optical illusion bridge. Caution - should not be undertaken when hungover.</div>
+              <div class="old-town title">Old Town</div>
+              <div class="old-town description">Old Town is our favourite area of Edinburgh and is where we lived during uni after moving out of halls. There are some beautiful buildings, great coffee spots, pubs and restaurants and endless cobbled streets. We recommend wandering down to Grassmarket for a drink and a hog roast bap from Oink via Flodden Wall (access from Keir Street) for some amazing views of the castle. Bring a coat!</div>
+              <div class="edinburgh-zoo title">Edinburgh Zoo</div>
+              <div class="edinburgh-zoo description">What better time of year to go to see some Penguins at Penguin Rock - need we say more? Giant Panda exhibition is also worth a mention to be fair.</div>
+              <div class="ghost-tour title">Vaults Ghost Tour</div>
+              <div class="ghost-tour description">Underneath the Royal Mile are a series of creepy vaults - test your bravery by going on a ghost tour underground with your jumpiest friend. Afterwards, reward yourself with a wee dram of whiskey to settle your nerves!</div>
+              <div class="edinburgh-castle title">Edinburgh Castle</div>
+              <div class="edinburgh-castle description">Edinburgh castle dominates the skyline from Old and New Town alike. It's definitely worth your while to have a look around, but if you don't have the time it's still worth heading up to the forecourt for some great views across the city (weather permitting).</div>
             </div>
           </div>
         </div>
@@ -121,14 +129,6 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
-        jumpToAnchor(tabName);
-      }
-
-      function jumpToAnchor(anchor){
-        var url = location.href;
-        location.href = "#"+anchor;
-        // Don't like hashes. Changing it back.
-        history.replaceState(null,null,url);   
       }
     </script>
   </body>

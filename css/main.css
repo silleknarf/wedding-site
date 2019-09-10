@@ -16,7 +16,7 @@ html,h1,p, body {
     text-transform: uppercase;
 }
 
-.title {
+#title {
     font-size: 4vw;
     grid-column: 2;
     grid-row: 1;
@@ -41,17 +41,10 @@ html,h1,p, body {
     -webkit-text-fill-color: transparent;
  }
 
-.subtitle {
+#subtitle {
     grid-column: 2;
     grid-row: 2;
- }
-
- .nav {
-    grid-column: 2;
-    grid-row: 3;
-    display: flex;
-    justify-content: space-between;
- }
+}
 
 .img-banner {
     grid-column: 1 / span 3;
@@ -64,11 +57,6 @@ html,h1,p, body {
     margin-bottom: -4px;
 }
 
-.subsection-heading {
-    font-size: xx-large;
-    text-transform: uppercase;
-}
-
 .subsection-body {
     padding: 20px;
 }
@@ -76,6 +64,7 @@ html,h1,p, body {
 #content {
     grid-row: 4;
     grid-column: 2;
+    text-align: center;
 
     /*
     background-color: blanchedalmond;
@@ -84,7 +73,6 @@ html,h1,p, body {
 }
 
 /* Futura */
-
 /* Sackers Italian */
 
 #schedule {
@@ -96,46 +84,85 @@ html,h1,p, body {
     text-align: left;
 }
 
+#schedule .row {
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+     width: 40vw;
+}
+
+#schedule .row .cell-time {
+    grid-column: 1;
+    text-align: right;
+}
+
+#schedule .row .dash {
+    grid-column: 2;
+    text-align: center;
+}
+
+#schedule .row .cell-description {
+    grid-column: 3;
+}
+
 #how-to-get-there {
     text-align: center;
+}
+
+#transport-options {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.train {
+    grid-column: 1;
+}
+
+#plane {
+    grid-column: 2;
+}
+
+#transport-options .title {
+    grid-row: 1;
+}
+
+#transport-options .description {
+    grid-row: 2;
 }
 
 #gift-list {
     text-align: center;
 }
 
+#img-wedding-shop {
+     width: 30vh;
+}
+
 #what-to-do-in-edinburgh {
     text-align: center;
 }
 
-.row {
-     display: grid;
-     grid-template-columns: 33% 33% 33%;
-     width: 20vw;
+#what-to-do-in-edinburgh-suggestions {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
 }
 
-.row .cell-time {
-    grid-column: 1;
-    text-align: right;
+#what-to-do-in-edinburgh-suggestions .title {
+    grid-row: 1;
 }
 
-.row .dash {
-    grid-column: 2;
-    text-align: center;
-}
-
-.row .cell-description {
-    grid-column: 3;
-}
-
-#img-wedding-shop {
-     width: 30vh;
+#what-to-do-in-edinburgh-suggestions .description {
+    grid-row: 2;
+    font-size: small;
+    text-align: justify;
 }
 
 /* Style the tab */
 .tab {
     overflow: hidden;
- }
+    display: inline-block;
+}
   
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -149,7 +176,7 @@ html,h1,p, body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
- }
+}
   
 /* Change background color of buttons on hover */
 .tab button:hover {
