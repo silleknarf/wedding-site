@@ -138,8 +138,9 @@ html,h1,p, body {
   
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    font-size: x-large;
+    font-size: large;
     text-transform: uppercase;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
     background-color: inherit;
     float: left;
     border: none;

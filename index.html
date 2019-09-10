@@ -16,29 +16,6 @@
       <div class="subtitle heading">
         Assembly Rooms, Edinburgh, 14th December 2019
       </div>
-      <!--
-      <div class="nav heading">
-        <div class="nav-item">
-          <a href="/">
-            Home
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="#schedule">
-            Schedule
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="#how-to-get-there">
-            How To Get There
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="#gift-list">
-            Gift List
-          </a>
-        </div>
-      </div>-->
       <div class="img-banner">
         <img src="img/FrankAndLauraNZ.jpg" alt="Frank and Laura in NZ" />
       </div>
@@ -49,7 +26,7 @@
           <button class="tablinks" onclick="openTab(event, 'gift-list')">Gift List</button>
           <button class="tablinks" onclick="openTab(event, 'what-to-do-in-edinburgh')">What to do in Edinburgh</button>
         </div>
-        <div id="schedule" class="tabcontent">
+        <div id="schedule" class="tabcontent" style="display: block" >
           <div id="schedule-body" class="subsection-body">
             <div class="row">
               <div class="cell-time">13:45</div>
@@ -144,6 +121,14 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
+        jumpToAnchor(tabName);
+      }
+
+      function jumpToAnchor(anchor){
+        var url = location.href;
+        location.href = "#"+anchor;
+        // Don't like hashes. Changing it back.
+        history.replaceState(null,null,url);   
       }
     </script>
   </body>
