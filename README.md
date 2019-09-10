@@ -3,9 +3,11 @@ TODO
 
 + Add map element
 + Add the wedding shop logo
-- Split into coloured grid
++ Implement tabs
++ Split into coloured grid
+- Add new what to do in Ed material
+- Set default tab
 - Layout how to get there section
 - Add countdown timer
 - Add wedding colour
-- Add recommended Edinburgh activities section
 - Add much more icons

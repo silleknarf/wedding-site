@@ -43,10 +43,13 @@
         <img src="img/FrankAndLauraNZ.jpg" alt="Frank and Laura in NZ" />
       </div>
       <div id="content"> 
-        <div id="schedule">
-          <div class="subsection-heading">
-            Schedule
-          </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'schedule')">Schedule</button>
+          <button class="tablinks" onclick="openTab(event, 'how-to-get-there')">How To Get There</button>
+          <button class="tablinks" onclick="openTab(event, 'gift-list')">Gift List</button>
+          <button class="tablinks" onclick="openTab(event, 'what-to-do-in-edinburgh')">What to do in Edinburgh</button>
+        </div>
+        <div id="schedule" class="tabcontent">
           <div id="schedule-body" class="subsection-body">
             <div class="row">
               <div class="cell-time">13:45</div>
@@ -80,10 +83,7 @@
             </div>
           </div>
         </div>
-        <div id="how-to-get-there" class="how-to-get-there">
-          <div class="subsection-heading">
-            How To Get There
-          </div>
+        <div id="how-to-get-there" class="tabcontent">
           <div class="subsection-body">
             <iframe 
               frameborder="0" 
@@ -103,10 +103,7 @@
               The city’s tram system is another great way to hop between the airport and city centre. Trams operate between Edinburgh Airport and Edinburgh city centre every 8-10mins.
           </div>
         </div>
-        <div id="gift-list">
-          <div class="subsection-heading">
-            Gift List
-          </div>
+        <div id="gift-list" class="tabcontent">
           <div class="subsection-body">
             <a href="https://www.weddingshop.com/Buy/View/63595">
               <img 
@@ -115,10 +112,7 @@
             </a>
           </div>
         </div>
-        <div id="what-to-do-in-edinburgh">
-          <div class="subsection-heading">
-            What to do in Edinburgh
-          </div>
+        <div id="what-to-do-in-edinburgh" class="tabcontent">
           <div class="subsection-body">
             If it's your first time in the 'burgh, here are some suggested activities:
             <div id="what-to-do-in-edinburgh-suggestions">
@@ -133,5 +127,24 @@
         </div>
       </div>
     </div>
+
+    <!-- Simple script for tabs, nicked from: 
+         https://www.w3schools.com/howto/howto_js_tabs.asp
+    -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
   </body>
 </html>
