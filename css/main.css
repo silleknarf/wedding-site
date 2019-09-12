@@ -115,14 +115,6 @@ html,h1,p, body {
     grid-column-gap: 20px;
 }
 
-.train {
-    grid-column: 1;
-}
-
-#plane {
-    grid-column: 2;
-}
-
 #transport-options .title {
     grid-row: 1;
 }
