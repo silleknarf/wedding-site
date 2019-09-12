@@ -79,29 +79,15 @@ html,h1,p, body {
     text-align: center;
 }
 
-#schedule-body {
-    display: inline-block;
-    text-align: left;
-}
-
 #schedule .row {
-     display: grid;
-     grid-template-columns: 33% 33% 33%;
-     width: 40vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
-#schedule .row .cell-time {
-    grid-column: 1;
-    text-align: right;
-}
-
-#schedule .row .dash {
-    grid-column: 2;
+#schedule .row .cell {
+    width: 100px;
     text-align: center;
-}
-
-#schedule .row .cell-description {
-    grid-column: 3;
 }
 
 #how-to-get-there {
@@ -187,7 +173,7 @@ html,h1,p, body {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px 12px 6px;
+    padding: 6px 0 12px 0;
 }
 
 .tablinks {
@@ -208,10 +194,9 @@ html,h1,p, body {
             rgba(163,126,67,1) 45%, 
             rgba(145,112,59,1) 61%, 
             rgba(213,173,109,1) 100%);
-    padding: 5px;
+    padding-top: 5px;
   }
   
 .gold-foil-border {
     background: white;
-    padding: 2rem;
 }
