@@ -22,3 +22,4 @@ TODO
 - What to do in Edinburgh
     - Wrap onto new rows on small screen
     - Add line drawings
+- Add Paddy's images
