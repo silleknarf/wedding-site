@@ -186,5 +186,31 @@ html,h1,p, body {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 6px 12px 12px 6px;
+}
+
+.tablinks {
+    display: flex;
+    align-items: center;
+}
+
+.tablinks img {
+    margin: 5px;
+}
+
+.gold-foil-border-wrap {
+    background: linear-gradient(
+            to right, 
+            rgba(213,173,109,1) 0%, 
+            rgba(213,173,109,1) 26%, 
+            rgba(226,186,120,1) 35%, 
+            rgba(163,126,67,1) 45%, 
+            rgba(145,112,59,1) 61%, 
+            rgba(213,173,109,1) 100%);
+    padding: 5px;
+  }
+  
+.gold-foil-border {
+    background: white;
+    padding: 2rem;
 }

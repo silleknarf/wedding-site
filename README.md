@@ -10,8 +10,8 @@ TODO
 + Layout how to get there section
 - Add countdown timer
 - Tab titles
-    - Justify 
     - Add line drawing icons
+    - Justify 
 - How to get there
     - Add transport line drawings 
     - Use shortened by plane text
