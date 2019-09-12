@@ -12,7 +12,9 @@ TODO
     + Add line drawing icons
     + Justify 
 - Schedule 
-    - Improve formatting
+    + Improve formatting
+    - Make it work on mobile
+    - Add images
 - Add countdown timer
 - How to get there
     - Add transport line drawings 
