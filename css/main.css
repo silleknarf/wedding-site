@@ -156,7 +156,8 @@ html,h1,p, body {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
   
 /* Style the buttons that are used to open the tab content */
