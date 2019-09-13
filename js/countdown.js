@@ -3,7 +3,7 @@
  */
 
 // Our ceremony kick off time
-var countDownDate = new Date("2019-12-14 23:00:00Z").getTime();
+var countDownDate = new Date("2019-12-14 14:00:00Z").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
