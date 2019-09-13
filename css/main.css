@@ -88,6 +88,14 @@ html,h1,p, body {
 #schedule .row .cell {
     width: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#schedule img {
+    margin: 5px;
+    width: 30px;
 }
 
 #how-to-get-there {

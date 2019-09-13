@@ -13,8 +13,8 @@ TODO
     + Justify 
 - Schedule 
     + Improve formatting
+    + Add images
     - Make it work on mobile
-    - Add images
 - Add countdown timer
 - How to get there
     - Add transport line drawings 
