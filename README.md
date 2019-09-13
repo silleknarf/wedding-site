@@ -11,11 +11,11 @@ TODO
 + Tab titles
     + Add line drawing icons
     + Justify 
++ Add countdown timer
 - Schedule 
     + Improve formatting
     + Add images
     - Make it work on mobile
-- Add countdown timer
 - How to get there
     - Add transport line drawings 
     - Use shortened by plane text
