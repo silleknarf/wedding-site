@@ -23,11 +23,11 @@ DONE
     + Add transport line drawings 
     + Use shortened by plane text
     + Make it work on mobile
++ Highlight schedule by default
 
 TODO
 ====
 
-- Highlight schedule by default
 - Add Paddy's images
 - License icons
 - Deploy to S3
