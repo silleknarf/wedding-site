@@ -66,11 +66,6 @@ html,h1,p, body {
     grid-row: 4;
     grid-column: 2;
     text-align: center;
-
-    /*
-    background-color: blanchedalmond;
-    background: linear-gradient(#c8d0d3, #d3d4cc, blanchedalmond, #cfbcab);
-    */
 }
 
 /* Futura */
@@ -159,8 +154,9 @@ html,h1,p, body {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 }
   
 /* Style the buttons that are used to open the tab content */
@@ -197,7 +193,7 @@ html,h1,p, body {
     align-items: center;
 }
 
-.tablinks.active .gold-foil-border-wrap {
+.tablinks .active .gold-foil-border-wrap {
     width: 100%;
 }
 

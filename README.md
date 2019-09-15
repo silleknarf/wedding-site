@@ -12,6 +12,9 @@ DONE
     + Add line drawing icons
     + Justify 
 + Add countdown timer
++ What to do in Edinburgh
+    + Wrap onto new rows on small screen
++ Make tabs work on mobile
 
 TODO
 ====
@@ -24,8 +27,6 @@ TODO
     + Add transport line drawings 
     + Use shortened by plane text
     - Make it work on mobile
-- What to do in Edinburgh
-    - Wrap onto new rows on small screen
 - Add Paddy's images
 - License icons
 - Deploy to S3
