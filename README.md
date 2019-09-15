@@ -19,18 +19,18 @@ DONE
     + Improve formatting
     + Add images
     + Make it work on mobile
++ How to get there
+    + Add transport line drawings 
+    + Use shortened by plane text
+    + Make it work on mobile
 
 TODO
 ====
 
-- How to get there
-    + Add transport line drawings 
-    + Use shortened by plane text
-    - Make it work on mobile
+- Highlight schedule by default
 - Add Paddy's images
 - License icons
 - Deploy to S3
 - Link DNS to S3 bucket
-
 - What to do in Edinburgh
     - Add line drawings
