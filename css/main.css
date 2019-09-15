@@ -105,8 +105,6 @@ html,h1,p, body {
 
 #transport-options {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
     grid-column-gap: 20px;
 }
 
@@ -144,6 +142,8 @@ html,h1,p, body {
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 }
 
 #what-to-do-in-edinburgh-suggestions .title {
