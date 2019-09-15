@@ -15,14 +15,14 @@ DONE
 + What to do in Edinburgh
     + Wrap onto new rows on small screen
 + Make tabs work on mobile
++ Schedule 
+    + Improve formatting
+    + Add images
+    + Make it work on mobile
 
 TODO
 ====
 
-- Schedule 
-    + Improve formatting
-    + Add images
-    - Make it work on mobile
 - How to get there
     + Add transport line drawings 
     + Use shortened by plane text
