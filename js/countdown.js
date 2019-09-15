@@ -33,4 +33,4 @@ if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "Just Married";
 }
-}, 1000);
+}, 500);
