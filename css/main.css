@@ -115,9 +115,17 @@ html,h1,p, body {
 }
 
 #transport-options .description {
-    grid-row: 2;
+    grid-row: 3;
     font-size: small;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#transport-options img {
+    margin: 5px;
+    width: 30px;
 }
 
 #gift-list {
