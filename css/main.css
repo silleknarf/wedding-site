@@ -169,7 +169,7 @@ html,h1,p, body {
     padding: 14px 16px;
     transition: 0.3s;
 }
-  
+
 .tab button:hover {
     background-color: #ddd;
 }
@@ -179,19 +179,19 @@ html,h1,p, body {
     padding: 6px 0 12px 0;
 }
 
-.tablinks {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .tablinks .title {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 50px;
 }
 
-.tablinks .active .gold-foil-border-wrap {
-    width: 100%;
+.tablinks .gold-foil-border-wrap {
+    display: none;
+}
+
+.tablinks.active .gold-foil-border-wrap {
+    display: block !important;
 }
 
 .tablinks img {

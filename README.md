@@ -23,14 +23,15 @@ DONE
     + Add transport line drawings 
     + Use shortened by plane text
     + Make it work on mobile
++ Highlight schedule by default
 
 TODO
 ====
 
-- Highlight schedule by default
++ License icons
++ Deploy to S3
++ Link DNS to S3 bucket
+- Add images of various sizes
 - Add Paddy's images
-- License icons
-- Deploy to S3
-- Link DNS to S3 bucket
 - What to do in Edinburgh
     - Add line drawings
