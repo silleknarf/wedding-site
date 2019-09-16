@@ -28,9 +28,10 @@ DONE
 TODO
 ====
 
++ License icons
++ Deploy to S3
++ Link DNS to S3 bucket
+- Add images of various sizes
 - Add Paddy's images
-- License icons
-- Deploy to S3
-- Link DNS to S3 bucket
 - What to do in Edinburgh
     - Add line drawings
