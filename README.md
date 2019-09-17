@@ -24,14 +24,15 @@ DONE
     + Use shortened by plane text
     + Make it work on mobile
 + Highlight schedule by default
++ License icons
++ Deploy to S3
++ Link DNS to S3 bucket
 
 TODO
 ====
 
-+ License icons
-+ Deploy to S3
-+ Link DNS to S3 bucket
-- Add images of various sizes
++ Add images of various sizes
 - Add Paddy's images
+- Re-order images on mobile
 - What to do in Edinburgh
     - Add line drawings
