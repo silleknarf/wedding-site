@@ -1,3 +1,6 @@
+
+/* Font's used on the invitation: Futura, Sackers Italian */
+
 html,h1,p, body {
     margin: 0;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
@@ -67,9 +70,6 @@ html,h1,p, body {
     grid-column: 2;
     text-align: center;
 }
-
-/* Futura */
-/* Sackers Italian */
 
 #schedule .subsection-body {
     display: grid;

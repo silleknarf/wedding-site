@@ -27,11 +27,11 @@ DONE
 + License icons
 + Deploy to S3
 + Link DNS to S3 bucket
++ Add images of various sizes
 
 TODO
 ====
 
-+ Add images of various sizes
 - Add Paddy's images
 - Re-order images on mobile
 - What to do in Edinburgh
