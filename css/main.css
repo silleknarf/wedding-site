@@ -69,6 +69,7 @@ html,h1,p, body {
     grid-row: 4;
     grid-column: 2;
     text-align: center;
+    display: grid;
 }
 
 #schedule .subsection-body {
@@ -212,4 +213,13 @@ html,h1,p, body {
   
 .gold-foil-border {
     background: white;
+}
+
+#img-castle {
+    grid-row: 2;
+}
+
+/* Flip for larger screens */
+#img-castle {
+	   grid-row: 3;
 }
