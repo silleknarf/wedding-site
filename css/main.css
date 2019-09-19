@@ -7,7 +7,6 @@ html,h1,p, body {
 .container {
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
     width: 100vw;
     min-width: 100vw;
 }
@@ -41,6 +40,21 @@ html,h1,p, body {
 
 #event-time {
     grid-column: 1 / span 2;
+}
+
+#appleton-tower {
+    display: none;
+    width: 50% !important;
+    /* center in div */
+    margin: auto;
+}
+
+#event-time:hover #appleton-tower {
+    display: block;
+}
+
+#event-time:hover #timer {
+    display: none;
 }
 
 #subtitle > * {
@@ -89,7 +103,7 @@ html,h1,p, body {
     -webkit-text-fill-color: transparent;
 }
 
-#timer {
+#event-time {
     vertical-align: middle;
 }
 
