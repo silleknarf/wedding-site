@@ -24,14 +24,14 @@ DONE
     + Use shortened by plane text
     + Make it work on mobile
 + Highlight schedule by default
-
-TODO
-====
-
 + License icons
 + Deploy to S3
 + Link DNS to S3 bucket
-- Add images of various sizes
-- Add Paddy's images
-- What to do in Edinburgh
-    - Add line drawings
++ Add images of various sizes
++ Re-order images on mobile
++ Add Paddy's images
++ Fix the fixed pixel width of the subtitles images
++ Improve layout of Paddy's images
+
+TODO
+====

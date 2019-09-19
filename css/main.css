@@ -1,3 +1,6 @@
+
+/* Font's used on the invitation: Futura, Sackers Italian */
+
 html,h1,p, body {
     margin: 0;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
@@ -23,6 +26,7 @@ html,h1,p, body {
     grid-row: 1;
     font-family: 'Italianno', cursive;
     text-transform: none;
+    text-align: center;
 
     /* Gold Foil Effect */
     color:    #D5AD6D; /*if no support for background-clip*/
@@ -45,6 +49,45 @@ html,h1,p, body {
 #subtitle {
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 150px);
+    grid-row-gap: 20px;
+}
+
+#event-time {
+    grid-column: 1 / span 2;
+    height: 80px;
+}
+
+/* One line for larger screens */
+@media only screen and (min-width: 768px) {
+    #subtitle {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    #event-time {
+        grid-column: 3;
+        height: inherit;
+    }
+}
+
+#subtitle > * {
+    text-align: center;
+}
+
+#subtitle img {
+    width: 100%;
+}
+
+#event-time {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
+#timer {
+    vertical-align: middle;
 }
 
 .img-banner {
@@ -53,9 +96,7 @@ html,h1,p, body {
 }
 
 .img-banner > img {
-    object-fit: contain;
     width: 100vw;
-    margin-bottom: -4px;
 }
 
 .subsection-body {
@@ -66,10 +107,8 @@ html,h1,p, body {
     grid-row: 4;
     grid-column: 2;
     text-align: center;
+    display: grid;
 }
-
-/* Futura */
-/* Sackers Italian */
 
 #schedule .subsection-body {
     display: grid;
@@ -212,4 +251,17 @@ html,h1,p, body {
   
 .gold-foil-border {
     background: white;
+}
+
+#img-castle {
+    grid-row: 2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Flip for larger screens */
+@media only screen and (min-width: 768px) {
+    #img-castle {
+        grid-row: 3;
+    }
 }
