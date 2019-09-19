@@ -26,6 +26,7 @@ html,h1,p, body {
     grid-row: 1;
     font-family: 'Italianno', cursive;
     text-transform: none;
+    text-align: center;
 
     /* Gold Foil Effect */
     color:    #D5AD6D; /*if no support for background-clip*/
@@ -48,6 +49,10 @@ html,h1,p, body {
 #subtitle {
     grid-column: 2;
     grid-row: 2;
+}
+
+#subtitle img {
+    width: 100%
 }
 
 .img-banner {
@@ -217,9 +222,13 @@ html,h1,p, body {
 
 #img-castle {
     grid-row: 2;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Flip for larger screens */
-#img-castle {
-	   grid-row: 3;
+@media only screen and (min-width: 768px) {
+    #img-castle {
+        grid-row: 3;
+    }
 }

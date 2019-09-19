@@ -28,11 +28,10 @@ DONE
 + Deploy to S3
 + Link DNS to S3 bucket
 + Add images of various sizes
++ Re-order images on mobile
++ Add Paddy's images
 
 TODO
 ====
 
-- Add Paddy's images
-- Re-order images on mobile
-- What to do in Edinburgh
-    - Add line drawings
+- Improve layout of Paddy's images
