@@ -36,11 +36,18 @@ html,h1,p, body {
     justify-content: space-between;
     grid-template-columns: repeat(2, 150px);
     grid-row-gap: 20px;
+    grid-column-gap: 10px;
 }
 
 #event-time {
     grid-column: 1 / span 2;
-    height: 80px;
+}
+
+#subtitle > * {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    text-align: center;
 }
 
 /* One line for larger screens */
@@ -53,10 +60,10 @@ html,h1,p, body {
         grid-column: 3;
         height: inherit;
     }
-}
 
-#subtitle > * {
-    text-align: center;
+    #subtitle > * {
+        height: 210px;
+    }
 }
 
 #subtitle img {
@@ -80,12 +87,6 @@ html,h1,p, body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-#event-time {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    align-items: center;
 }
 
 #timer {
