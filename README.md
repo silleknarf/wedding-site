@@ -35,3 +35,8 @@ DONE
 
 TODO
 ====
+
+- Fix IE rendering
+- Investigate Frank And Laura NZ not loading on safari
+- Make the general tab layout vertically on mobile
+- Move castle down and replace with hr on mobile
