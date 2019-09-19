@@ -30,8 +30,8 @@ DONE
 + Add images of various sizes
 + Re-order images on mobile
 + Add Paddy's images
++ Fix the fixed pixel width of the subtitles images
++ Improve layout of Paddy's images
 
 TODO
 ====
-
-- Improve layout of Paddy's images
