@@ -1,6 +1,4 @@
-
 /* Font's used on the invitation: Futura, Sackers Italian */
-
 html,h1,p, body {
     margin: 0;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
@@ -20,30 +18,15 @@ html,h1,p, body {
 }
 
 #title {
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 800;
     grid-column: 2;
     grid-row: 1;
-    font-family: 'Italianno', cursive;
+    font-family: 'Parisienne', cursive;
     text-transform: none;
     text-align: center;
-
-    /* Gold Foil Effect */
-    color:    #D5AD6D; /*if no support for background-clip*/
-    background: 
-        -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(
-            top, 
-            rgba(213,173,109,1) 0%, 
-            rgba(213,173,109,1) 26%, 
-            rgba(226,186,120,1) 35%, 
-            rgba(163,126,67,1) 45%, 
-            rgba(145,112,59,1) 61%, 
-            rgba(213,173,109,1) 100%);
-    background: -o-linear-gradient(transparent, transparent);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    z-index: 10;
+    color: black;
  }
 
 #subtitle {
@@ -78,6 +61,25 @@ html,h1,p, body {
 
 #subtitle img {
     width: 100%;
+}
+
+#subtitle .text-top {
+    /* Gold Foil Effect */
+    color:    #D5AD6D; /*if no support for background-clip*/
+    background: 
+        -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(
+            top, 
+            rgba(213,173,109,1) 0%, 
+            rgba(213,173,109,1) 26%, 
+            rgba(226,186,120,1) 35%, 
+            rgba(163,126,67,1) 45%, 
+            rgba(145,112,59,1) 61%, 
+            rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #event-time {
