@@ -42,6 +42,7 @@ html,h1,p, body {
     grid-column: 1 / span 2;
 }
 
+/* Appleton tower easter egg */
 #appleton-tower {
     display: none;
     width: 50% !important;
