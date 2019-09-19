@@ -5,7 +5,9 @@ html,h1,p, body {
 }
 
 .container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
     width: 100vw;
     min-width: 100vw;
@@ -19,7 +21,9 @@ html,h1,p, body {
 #title {
     font-size: 6vw;
     font-weight: 800;
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
     grid-row: 1;
     font-family: 'Parisienne', cursive;
     text-transform: none;
@@ -29,16 +33,24 @@ html,h1,p, body {
  }
 
 #subtitle {
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 2;
     grid-row: 2;
+    display: -ms-grid;
     display: grid;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-grid-columns: 150px 10px 150px;
     grid-template-columns: repeat(2, 150px);
     grid-row-gap: 20px;
     grid-column-gap: 10px;
 }
 
 #event-time {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
 }
 
@@ -59,19 +71,25 @@ html,h1,p, body {
 }
 
 #subtitle > * {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 1fr;
     grid-template-rows: auto 1fr;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
 /* One line for larger screens */
 @media only screen and (min-width: 768px) {
     #subtitle {
+        -ms-grid-columns: (300px)[3];
         grid-template-columns: repeat(3, 300px);
     }
 
     #event-time {
+        -ms-grid-column: 3;
         grid-column: 3;
         height: inherit;
     }
@@ -109,7 +127,10 @@ html,h1,p, body {
 }
 
 .img-banner {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
+    -ms-grid-row: 3;
     grid-row: 3;
 }
 
@@ -122,13 +143,17 @@ html,h1,p, body {
 }
 
 #content {
+    -ms-grid-row: 4;
     grid-row: 4;
+    -ms-grid-column: 2;
     grid-column: 2;
     text-align: center;
+    display: -ms-grid;
     display: grid;
 }
 
 #timeline {
+    display: -ms-grid;
     display: grid;
     row-gap: 20px;
     grid-auto-flow: row;
@@ -136,9 +161,16 @@ html,h1,p, body {
 }
 
 #timeline .cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #timeline img {
@@ -147,6 +179,7 @@ html,h1,p, body {
 }
 
 #general .subsection-body {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
@@ -155,10 +188,12 @@ html,h1,p, body {
 }
 
 #general .subsection-body .title {
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 
 #general .subsection-body .description {
+    -ms-grid-row: 3;
     grid-row: 3;
     font-size: small;
     text-align: justify;
@@ -169,6 +204,7 @@ html,h1,p, body {
 }
 
 #transport-options {
+    display: -ms-grid;
     display: grid;
     grid-gap: 20px;
     grid-auto-flow: row;
@@ -176,16 +212,25 @@ html,h1,p, body {
 }
 
 #transport-options .title {
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 
 #transport-options .description {
+    -ms-grid-row: 3;
     grid-row: 3;
     font-size: small;
     text-align: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #transport-options img {
@@ -206,6 +251,7 @@ html,h1,p, body {
 }
 
 #what-to-do-in-edinburgh-suggestions {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
@@ -214,10 +260,12 @@ html,h1,p, body {
 }
 
 #what-to-do-in-edinburgh-suggestions .title {
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 
 #what-to-do-in-edinburgh-suggestions .description {
+    -ms-grid-row: 3;
     grid-row: 3;
     font-size: small;
     text-align: justify;
@@ -226,6 +274,7 @@ html,h1,p, body {
 /* Style the tab */
 .tab {
     overflow: hidden;
+    display: -ms-grid;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
@@ -242,6 +291,8 @@ html,h1,p, body {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -255,9 +306,15 @@ html,h1,p, body {
 }
 
 .tablinks .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 50px;
 }
 
@@ -274,6 +331,23 @@ html,h1,p, body {
 }
 
 .gold-foil-border-wrap {
+    background: -webkit-gradient(
+            linear, 
+            left top, right top, 
+            from(rgba(213,173,109,1)), 
+            color-stop(26%, rgba(213,173,109,1)), 
+            color-stop(35%, rgba(226,186,120,1)), 
+            color-stop(45%, rgba(163,126,67,1)), 
+            color-stop(61%, rgba(145,112,59,1)), 
+            to(rgba(213,173,109,1)));
+    background: -o-linear-gradient(
+            left, 
+            rgba(213,173,109,1) 0%, 
+            rgba(213,173,109,1) 26%, 
+            rgba(226,186,120,1) 35%, 
+            rgba(163,126,67,1) 45%, 
+            rgba(145,112,59,1) 61%, 
+            rgba(213,173,109,1) 100%);
     background: linear-gradient(
             to right, 
             rgba(213,173,109,1) 0%, 
@@ -290,6 +364,7 @@ html,h1,p, body {
 }
 
 #img-castle {
+    -ms-grid-row: 2;
     grid-row: 2;
     width: 100%;
     margin-bottom: 20px;
@@ -298,6 +373,7 @@ html,h1,p, body {
 /* Flip for larger screens */
 @media only screen and (min-width: 768px) {
     #img-castle {
+        -ms-grid-row: 3;
         grid-row: 3;
     }
 }
