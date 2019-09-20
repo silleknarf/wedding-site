@@ -32,6 +32,11 @@ DONE
 + Add Paddy's images
 + Fix the fixed pixel width of the subtitles images
 + Improve layout of Paddy's images
++ Fix IE rendering
++ Make the general tab layout vertically on mobile
++ Move castle down and replace with hr on mobile
 
 TODO
 ====
+
+- Investigate Frank And Laura NZ not loading on safari
