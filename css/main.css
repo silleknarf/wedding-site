@@ -358,8 +358,6 @@ html,h1,p, body {
 }
 
 #img-castle {
-    -ms-grid-row: 2;
-    grid-row: 2;
     width: 100%;
     margin-bottom: 20px;
 }
