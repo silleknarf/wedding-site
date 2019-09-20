@@ -180,7 +180,7 @@ html,h1,p, body {
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #general .subsection-body .title {
