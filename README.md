@@ -1,3 +1,14 @@
+README
+======
+
+The technical goal of the project was to build a wedding website with very good performance. As it's a static site and there is no advanced functionality required, there was an early design decision to not use any major JS frameworks (i.e. Angular/React) and to go down the pure HTML and CSS route as much as possible.
+
+CREDITS
+=======
+
+- Graphics by Paddy Ellis 
+- Icons by https://www.flaticon.com/ 
+
 DONE
 ====
 
@@ -35,8 +46,7 @@ DONE
 + Fix IE rendering
 + Make the general tab layout vertically on mobile
 + Move castle down and replace with hr on mobile
++ Investigate Frank And Laura NZ not loading on safari
 
 TODO
 ====
-
-- Investigate Frank And Laura NZ not loading on safari

@@ -132,7 +132,7 @@ html,h1,p, body {
     grid-column: 1 / span 3;
 }
 
-.img-banner > img {
+.img-banner img {
     width: 100vw;
 }
 
