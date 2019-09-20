@@ -34,9 +34,9 @@ DONE
 + Improve layout of Paddy's images
 + Fix IE rendering
 + Make the general tab layout vertically on mobile
++ Move castle down and replace with hr on mobile
 
 TODO
 ====
 
-- Move castle down and replace with hr on mobile
 - Investigate Frank And Laura NZ not loading on safari

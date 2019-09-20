@@ -364,11 +364,10 @@ html,h1,p, body {
     margin-bottom: 20px;
 }
 
-/* Flip for larger screens */
+/* No horizontal rule for larger screens */
 @media only screen and (min-width: 768px) {
-    #img-castle {
-        -ms-grid-row: 3;
-        grid-row: 3;
+    hr {
+        display: none;
     }
 }
 
